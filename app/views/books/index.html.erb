@@ -12,9 +12,22 @@
         <td><%= book.title %></td>
         <td><%= book.body %></td>
         <td><%= link_to "Show", book_path(book.id) %></td>
-        <td><a href="#">Edit</a></td>
+        <td><%= link_to "Edit", edit_book_path(book.id) %></td>
         <td><a href="#">Destroy</a></td>
       </tr>
     <% end %>
  </tbody>
 </table>
+
+<h2>New book</h2>
+<%= form_with model: @book, local: true do |f| %>
+  <div class="field">
+    <%= f.label :title, "Title" %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :body, "Body" %>
+    <%= f.text_area :body %>
+  </div>
+  <%= f.submit "Create Book" %>
+<% end %>
