@@ -1,15 +1,6 @@
 <h1>Editing Book</h2>
-<%= form_with model: @book, local: true do |f| %>
-  <div class="field">
-    <%= f.label :title, "Title" %>
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :body, "Body" %>
-    <%= f.text_area :body %>
-  </div>
-  <%= f.submit "Update Book" %>
-<% end %>
+<%= render "layouts/error_messages", model: @book %>
+<%= render "layouts/form" %>
 
 <%= link_to "Show", book_path(@book.id) %>
 <%= link_to "Back", books_path %>
