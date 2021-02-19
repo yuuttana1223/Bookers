@@ -1,6 +1,6 @@
 <h1>Editing Book</h2>
 <%= render "layouts/error_messages", model: @book %>
-<%= render "layouts/form" %>
+<%= render "books/form" %>
 
 <%= link_to "Show", book_path(@book.id) %>
 <%= link_to "Back", books_path %>
