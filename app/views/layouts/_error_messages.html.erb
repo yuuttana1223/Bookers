@@ -5,8 +5,8 @@
       prohibited this message from being saved:
     </h2>
     <ul>
-      <% model.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+      <% model.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
       <% end %>
     </ul>
   </div>

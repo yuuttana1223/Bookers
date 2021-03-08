@@ -8,6 +8,6 @@
     <%= f.text_area :body %>
   </div>
   <div class="actions">
-    <%= f.submit "#{@submit_name}" %>
+    <%= f.submit yield(:submit_btn) %>
   </div>
 <% end %>
