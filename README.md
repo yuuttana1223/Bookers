@@ -1,24 +1,18 @@
-# README
+# 8章【課題：アプリケーションを作成してみよう：基礎編】
+DMM WEBCAMPの学習コンテンツ8章【課題：アプリケーションを作成してみよう：基礎編】です。
+## 要件
+- 画面設計（デザイン／レイアウト）、画面遷移、機能を完成アプリケーションを参考にして考えましょう。
+- 各機能についてはこれまでに学んだことを復習しつつ作成してください。
+- 中にはこれまで学んでいないことも含まれています（例えば、ルートパスや投稿と一覧の機能を同じページに置くなど）。
+- これらは方法をネットで検索されたり、試行錯誤して実装を試みて下さい。
+- 学習していないことをネットで調べ自ら手を動かし解決していくことは、今後、エンジニアとして必須のスキルとなります。
+## テーマ： 読んだ本の感想を投稿するサイト
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- また、世の中にあるアプリケーションの多くは複数の機能（投稿機能、削除機能など）で構成されています。
+- どの機能から作るかは作る人によって異なります。しかし、作る優先度は必ずあります。
+- 例えば、投稿がなければ一覧画面や詳細画面で編集機能や削除機能が正しく動作しているか確認することができません。
+- どの機能から作るか、その機能に必要な要素（コントローラー・ビュー・ルーティングなど）は何かを意識し、課題に取り組みましょう。
+- 作成していただくアプリケーションは、以下のurlから見ることができます。
+- 完成アプリケーションurl : https://bookers-level1.herokuapp.com/
+- ※上記のアプリケーションは、1時間に一度投稿されたデータをリセットしています。
+- こちらのデータリセット機能は当課題の要件外になり、実装は不要です。
