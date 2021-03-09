@@ -8,6 +8,10 @@
     <%= f.text_area :body %>
   </div>
   <div class="actions">
-    <%= f.submit yield(:submit_btn) %>
+    <% if action_name == "index" || action_name == "create" %>
+      <%= f.submit "Create Book" %>
+    <% else %>
+      <%= f.submit "Update Book" %>
+    <% end %>
   </div>
 <% end %>
